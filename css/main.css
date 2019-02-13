@@ -22,8 +22,18 @@ body {
 #aboutme {
     margin: 200px 0 50px 0;
 }
+#aboutme h4:nth-child(2) {
+  margin:30px 0 0 0;
+}
+#aboutme h4 {
+  margin:25px 0 0 0;
+  line-height: 2.5rem;
+}
 .text-center {
     text-align: center;
+}
+.text-justified {
+  text-align: justify;
 }
 #skills {
   font-family: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -42,8 +52,14 @@ body {
 #skills p {
   font-size: 1.4rem;
 }
+#contact h3 {
+  display: block;
+}
 #contact {
   margin: 250px 0 0 0;
+}
+#contact div h4 {
+  line-height: 2.5rem;
 }
 #contact i {
   font-size: 40px;
@@ -53,7 +69,13 @@ body {
 #contact a {
   color: black;
 }
+#contact .row {
+  margin: 40px 0;
+}
 footer {
-  margin: 250px 0 20px 0;
+  margin: 200px 0 20px 0;
   font-family: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer h5 {
+  line-height: 30px;
 }
