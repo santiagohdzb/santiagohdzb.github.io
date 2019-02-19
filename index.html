@@ -5,49 +5,71 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Norican|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet"/>
   </head>
   <body>
     <section id="main" class="row justify-content-center">
-      <div class="col-md-8">
-        <div class="text-center" id="me">
+      <div class="col-md-8 text-center">
+          <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary btn-sm active">
+                <input type="radio" name="options" id="eng" autocomplete="off" checked> ENG
+              </label>
+              <label class="btn btn-secondary btn-sm">
+                <input type="radio" name="options" id="spa" autocomplete="off"> SPA
+              </label>
+            </div>
+      </div>
+      <div class="col-md-10">
+        <div id="me" class="text-center col-md-12">
             <h1 id="name">Santiago Hernández</h1>
-            <img src="img/me.jpg" />
-            <h3 id="positions">
-              Full Stack Developer | Mobile App Developer
-            </h3>
+            <img alt="me" src="img/me.jpg" />
+            <div id="positions">
+              <h3 class="d-none d-lg-block">
+                Full Stack Developer | Mobile App Developer
+              </h3>
+              <div class="small">
+                <h3 class="col-xs-12 d-block d-lg-none">
+                  Full Stack Developer
+                </h3>
+                <h3 class="col-xs-12 d-block d-lg-none">
+                  Mobile App Developer
+                </h3>
+              </div>
+            </div>
         </div>
-        <div id="aboutme" class="text-center">
-          <h3 data-aos="fade-right" id="greeting" data-str="about_hi">
-            Hola! soy Santiago. Mucho gusto.
-          </h3>
-          <h4 data-aos="fade-right" data-str="about_i_am">
-            Soy desarrollador de software. Tengo 26 años y soy mexicano.
-          </h4>
-          <h4 data-aos="fade-right" data-str="about_i_like">
-            Me especializo en C# y en Javascript. Me encanta 
-            desarrollar herramientas, sitios o apps que 
-            solucionen problemas reales o que hagan más 
-            sencilla la vida de alguien.
-          </h4>
-          <h4 data-aos="fade-right" data-str="about_experience">
-            Tengo 4+ años de experiencia creando soluciones
-            para diferentes empresas y clientes. Disfruto mucho
-            programar. Soy autodidacta y considero que soy
-            muy bueno aprendiendo nuevas tecnologías.
-          </h4>
-          <h4 data-aos="fade-right" data-str="about_priorities">
-            En una industria que se mueve y avanza a diario,
-            un framework o herramienta puede llegar a ser
-            obsoleto en cuestión de meses. Por lo que considero
-            más importantes las habilidades lenguaje-agnósticas.
-          </h4>
+        <div class="row justify-content-center">
+          <div id="aboutme" class="text-center col-md-12 col-lg-10">
+            <h3 data-aos="fade-right" id="greeting" data-str="about_hi">
+              Hola! soy Santiago. Mucho gusto.
+            </h3>
+            <h4 data-aos="fade-right" data-str="about_i_am">
+              Soy desarrollador de software. Tengo 26 años y soy mexicano.
+            </h4>
+            <h4 data-aos="fade-right" data-str="about_i_like">
+              Me especializo en C# y en Javascript. Me encanta 
+              desarrollar herramientas, sitios o apps que 
+              solucionen problemas reales o que hagan más 
+              sencilla la vida de alguien.
+            </h4>
+            <h4 data-aos="fade-right" data-str="about_experience">
+              Tengo 4+ años de experiencia creando soluciones
+              para diferentes empresas y clientes. Disfruto mucho
+              programar. Soy autodidacta y considero que soy
+              muy bueno aprendiendo nuevas tecnologías.
+            </h4>
+            <h4 data-aos="fade-right" data-str="about_priorities">
+              En una industria que se mueve y avanza a diario,
+              un framework o herramienta puede llegar a ser
+              obsoleto en cuestión de meses. Por lo que considero
+              más importantes las habilidades lenguaje-agnósticas.
+            </h4>
+          </div>
         </div>
         <div id="skills" class="col-md-12">
           <div class="row justify-content-center">
-            <div class="col-sm-6 col-md-4 text-center">
+            <div class="col-sm-6 col-xl-4 text-center">
               <i data-aos="fade-right" class="fas fa-code fa-2x"></i>
               <h3 data-aos="fade-right" data-str="skills_languages_title">
                 Lenguajes
@@ -56,7 +78,7 @@
                 Javascript, C#, Java, Kotlin, Dart, PHP, Typecript
               </p>
             </div>
-            <div class="col-sm-6 col-md-4 text-center">
+            <div class="col-sm-6 col-xl-4 text-center">
               <i data-aos="fade-right" class="fab fa-microsoft fa-2x"></i>
               <h3 data-aos="fade-right" data-str="skills_platforms_title">
                 Plataformas
@@ -65,7 +87,7 @@
                 ASP.NET, Windows Forms, Android, Xamarin, Electron
               </p>
             </div>
-            <div class="col-sm-6 col-md-4 text-center">
+            <div class="col-sm-6 col-xl-4 text-center">
               <i data-aos="fade-right" class="fas fa-database fa-2x"></i>
               <h3 data-aos="fade-right" data-str="skills_databases_title">
                 Bases de datos
@@ -74,7 +96,7 @@
                 MSSQL, SQLite, MySQL
               </p>
             </div>
-            <div class="col-sm-6 col-md-4 text-center">
+            <div class="col-sm-6 col-xl-4 text-center">
               <i data-aos="fade-right" class="fa fa-code-branch fa-2x"></i>
               <h3 data-aos="fade-right" data-str="skills_tools_title">
                 Herramientas
@@ -83,7 +105,7 @@
                 Git, Microsoft Team Foundation Services
               </p>
             </div>
-            <div class="col-sm-6 col-md-4 text-center">
+            <div class="col-sm-6 col-xl-4 text-center">
               <i data-aos="fade-right" class="far fa-keyboard fa-2x"></i>
               <h3 data-aos="fade-right" data-str="skills_ides_title">
                 IDEs
@@ -92,7 +114,7 @@
                 Visual Studio, Android Studio, NetBeans, IDEA
               </p>
             </div>
-            <div class="col-sm-6 col-md-4 text-center">
+            <div class="col-sm-6 col-xl-4 text-center">
               <i data-aos="fade-right" class="fab fa-js fa-2x"></i>
               <h3 data-aos="fade-right" data-str="skills_js_title">
                 Javascript
@@ -101,7 +123,7 @@
                 jQuery, bootstrap, GulpJS
               </p>
             </div>
-            <div class="col-sm-6 col-md-4 text-center">
+            <div class="col-sm-6 col-xl-4 text-center">
               <i data-aos="fade-right" class="fas fa-cloud fa-2x"></i>
               <h3 data-aos="fade-right" data-str="skills_cloud_title">
                 Cloud Computing
@@ -110,7 +132,7 @@
                 Azure, AWS
               </p>
             </div>
-            <div class="col-sm-6 col-md-4 text-center">
+            <div class="col-sm-6 col-xl-4 text-center">
               <i data-aos="fade-right" class="fas fa-brain fa-2x"></i>
               <h3 data-aos="fade-right" data-str="skills_ml_title">
                 Machine Learning
@@ -119,7 +141,7 @@
                 Tensorflow, Caffe
               </p>
             </div>
-            <div class="col-sm-6 col-md-4 text-center">
+            <div class="col-sm-6 col-xl-4 text-center">
               <i data-aos="fade-right" class="fas fa-eye fa-2x"></i>
               <h3 data-aos="fade-right" data-str="skills_cv_title">
                 Computer Vision
